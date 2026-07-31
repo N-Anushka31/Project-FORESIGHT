@@ -220,3 +220,5 @@ __marimo__/
 data/raw/*.csv
 data/raw/*.xls
 data/raw/*.xlsx
+# Processed data
+data/processed/*.csv
