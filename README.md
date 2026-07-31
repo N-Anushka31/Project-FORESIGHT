@@ -44,16 +44,27 @@ The primary objectives of this project are to:
 
 ## Dataset
 
-The project uses the following datasets:
+The datasets are **not included** in this repository because GitHub has a file size limit of 100 MB, and the retail transaction dataset exceeds this limit.
 
-- sales_daily.csv
-- sku_master.csv
-- calendar.csv
-- inventory_snapshots.csv
+Download the dataset from Kaggle:
 
-These datasets will be integrated and transformed to build a complete forecasting and inventory intelligence pipeline.
+**Synthetic Retail Dataset – 10 Million Transactions**
 
----
+https://www.kaggle.com/datasets/mrayyanshehzad/synthetic-retail-dataset-10-million-transactions
+
+After downloading and extracting the ZIP file, place the following CSV files inside the `data/raw/` folder:
+
+```text
+customer_master.csv
+inventory_snapshot.csv
+promotions.csv
+sales_transactions.csv
+sku_inventory_flags.csv
+sku_master.csv
+store_master.csv
+```
+
+The cleaned datasets will be generated automatically and saved in the `data/processed/` folder after running the data cleaning notebook.
 
 ## Project Workflow
 
@@ -154,17 +165,21 @@ The final project will include:
 
 ---
 
-## Repository Structure
-
 ```text
 Project-FORESIGHT/
 │
 ├── app/
 ├── data/
-│   ├── raw/
-│   └── processed/
+│   ├── raw/                  # Downloaded Kaggle datasets
+│   └── processed/            # Cleaned datasets generated locally
 ├── notebooks/
+│   ├── 01_data_cleaning.ipynb
+│   ├── 02_eda.ipynb
+│   ├── 03_feature_engineering.ipynb
+│   ├── 04_forecasting.ipynb
+│   └── 05_risk_scoring.ipynb
 ├── reports/
+│   └── Data_Quality_Report.md
 ├── src/
 ├── presentation/
 ├── README.md
@@ -172,11 +187,7 @@ Project-FORESIGHT/
 └── .gitignore
 ```
 
----
-
-## Project Status
-
-**Current Phase:** Phase 1 – Business Understanding
+**Current Phase:** Phase 3 – Exploratory Data Analysis
 
 ### Completed
 
@@ -184,10 +195,12 @@ Project-FORESIGHT/
 - Project structure
 - Business understanding
 - Project documentation
+- Data collection
+- Data cleaning
+- Data quality assessment
 
 ### Upcoming
 
-- Data cleaning
 - Exploratory Data Analysis
 - Feature engineering
 - Demand forecasting
@@ -195,8 +208,6 @@ Project-FORESIGHT/
 - Dashboard development
 - Deployment
 - Executive presentation
-
----
 
 ## Expected Outcomes
 
@@ -223,6 +234,41 @@ Future improvements may include:
 - Continuous model monitoring
 
 ---
+## How to Run
+
+1. Clone the repository.
+
+```bash
+git clone <repository-url>
+```
+
+2. Open the project in Visual Studio Code.
+
+3. Create and activate a Python virtual environment.
+
+4. Install the required packages.
+
+```bash
+pip install -r requirements.txt
+```
+
+5. Download the dataset from Kaggle.
+
+6. Extract the ZIP file and copy all CSV files into the `data/raw/` folder.
+
+7. Run the notebooks in the following order:
+
+- 01_data_cleaning.ipynb
+- 02_eda.ipynb
+- 03_feature_engineering.ipynb
+- 04_forecasting.ipynb
+- 05_risk_scoring.ipynb
+
+8. Run the Streamlit dashboard after development is complete.
+
+```bash
+streamlit run app/app.py
+```
 
 ## License
 
