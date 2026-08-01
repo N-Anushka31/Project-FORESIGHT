@@ -187,7 +187,7 @@ Project-FORESIGHT/
 └── .gitignore
 ```
 
-**Current Phase:** Phase 3 – Exploratory Data Analysis
+**Current Phase:** Phase 5 – Demand Forecasting
 
 ### Completed
 
@@ -198,11 +198,11 @@ Project-FORESIGHT/
 - Data collection
 - Data cleaning
 - Data quality assessment
+-Exploratory Data Analysis
+- Feature engineering
 
 ### Upcoming
 
-- Exploratory Data Analysis
-- Feature engineering
 - Demand forecasting
 - Inventory risk scoring
 - Dashboard development
