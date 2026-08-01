@@ -187,7 +187,7 @@ Project-FORESIGHT/
 └── .gitignore
 ```
 
-**Current Phase:** Phase 5 – Demand Forecasting
+**Current Phase:** Phase 6– Inventory risk scoring
 
 ### Completed
 
@@ -200,10 +200,10 @@ Project-FORESIGHT/
 - Data quality assessment
 -Exploratory Data Analysis
 - Feature engineering
+- Demand forecasting
 
 ### Upcoming
 
-- Demand forecasting
 - Inventory risk scoring
 - Dashboard development
 - Deployment
