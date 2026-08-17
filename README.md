@@ -179,7 +179,12 @@ Project-FORESIGHT/
 │   ├── 04_forecasting.ipynb
 │   └── 05_risk_scoring.ipynb
 ├── reports/
-│   └── Data_Quality_Report.md
+│   ├── Business_Understanding.md
+│   ├── Data_Quality_Report.md
+│   ├── EDA_Report.md
+│   ├── Executive_Summary.md
+│   ├── Model_Report.md
+│   └── Risk_Scoring_Report.md
 ├── src/
 ├── presentation/
 ├── README.md
@@ -187,7 +192,7 @@ Project-FORESIGHT/
 └── .gitignore
 ```
 
-**Current Phase:** Phase 6– Inventory risk scoring
+**Current Phase:** Phase 7 – Planning Dashboard
 
 ### Completed
 
@@ -201,10 +206,10 @@ Project-FORESIGHT/
 -Exploratory Data Analysis
 - Feature engineering
 - Demand forecasting
+-Inventory risk scoring
 
 ### Upcoming
 
-- Inventory risk scoring
 - Dashboard development
 - Deployment
 - Executive presentation
