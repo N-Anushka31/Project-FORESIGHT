@@ -528,6 +528,9 @@ def add_derived_fields(df):
         default="Low",
     )
 
+    if "risk" not in df.columns:
+    df["risk"] = "Low"
+
     df["risk"] = (
         df["risk"]
         .fillna(pd.Series(calculated_risk, index=df.index))
