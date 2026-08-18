@@ -539,6 +539,13 @@ def add_derived_fields(df):
             "Low": "Maintain inventory"
         }).fillna("Monitor inventory")
 
+    if "priority" not in df.columns:
+        df["priority"] = df["risk"].map({
+           "High": 3,
+           "Medium": 2,
+            "Low": 1
+        }).fillna(1)
+
     df["risk"] = (
         df["risk"]
         .fillna(pd.Series(calculated_risk, index=df.index))
