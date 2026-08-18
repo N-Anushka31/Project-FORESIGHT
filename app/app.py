@@ -529,7 +529,7 @@ def add_derived_fields(df):
     )
 
     if "risk" not in df.columns:
-    df["risk"] = "Low"
+        df["risk"] = "Low"
 
     df["risk"] = (
         df["risk"]
