@@ -4,6 +4,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import streamlit as st
+import plotly.express as px
 
 
 # ============================================================
@@ -530,6 +531,13 @@ def add_derived_fields(df):
 
     if "risk" not in df.columns:
         df["risk"] = "Low"
+
+    if "action" not in df.columns:
+        df["action"] = df["risk"].map({
+            "High": "Reduce replenishment",
+            "Medium": "Monitor inventory",
+            "Low": "Maintain inventory"
+        }).fillna("Monitor inventory")
 
     df["risk"] = (
         df["risk"]
@@ -1098,10 +1106,9 @@ if page == "Planning Dashboard":
         .sort_index()
     )
 
-    st.line_chart(
-        monthly,
-        height=380,
-    )
+    fig = px.line(monthly)
+    fig.update_layout(height=380)
+    st.plotly_chart(fig, use_container_width=True)
 
     if monthly["Forecast"].sum() > 0:
         variance = (
