@@ -65,6 +65,10 @@ store_master.csv
 ```
 
 The cleaned datasets will be generated automatically and saved in the `data/processed/` folder after running the data cleaning notebook.
+The project also includes the planning dataset used by the Streamlit dashboard:
+
+```text
+planning_dataset_final.csv
 
 ## Project Workflow
 
@@ -192,7 +196,7 @@ Project-FORESIGHT/
 └── .gitignore
 ```
 
-**Current Phase:** Phase 7 – Planning Dashboard
+**Current Phase:** Phase 8 –  Deployment
 
 ### Completed
 
@@ -207,16 +211,16 @@ Project-FORESIGHT/
 - Feature engineering
 - Demand forecasting
 -Inventory risk scoring
+- Dashboard development
 
 ### Upcoming
 
-- Dashboard development
 - Deployment
 - Executive presentation
 
 ## Expected Outcomes
 
-The completed solution will:
+The completed solution:
 
 - Improve demand forecasting accuracy.
 - Support efficient inventory planning.
