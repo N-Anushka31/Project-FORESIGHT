@@ -190,13 +190,12 @@ Project-FORESIGHT/
 │   ├── Model_Report.md
 │   └── Risk_Scoring_Report.md
 ├── src/
-├── presentation/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
 ```
 
-**Current Phase:** Phase 8 –  Deployment
+
 
 ### Completed
 
@@ -212,11 +211,7 @@ Project-FORESIGHT/
 - Demand forecasting
 -Inventory risk scoring
 - Dashboard development
-
-### Upcoming
-
 - Deployment
-- Executive presentation
 
 ## Expected Outcomes
 

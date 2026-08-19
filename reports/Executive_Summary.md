@@ -133,7 +133,7 @@ Project-FORESIGHT integrates data analytics, demand forecasting, inventory risk 
 
 The completed Phase 7 planning dashboard provides a business-facing interface for exploring demand forecasts, inventory risks, SKU-level performance, and recommended actions.
 
-The next stage of the project is deployment, followed by final documentation and executive presentation.
+The project has been deployed through Streamlit, and the final stage is documentation and executive presentation.
 
 ## Future Enhancements
 
